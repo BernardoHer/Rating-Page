@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/app.js"></script>
     <link href="/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
-    <title>Rating Mai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <title>Rating Main</title>
 </head>
 <body>
-    <div class="card">
+    <section class="rating-section">
         <div class="star-icon">
-            <img src="/images/icon-star.svg">
+            <img class="img-star-icon" src="/images/icon-star.svg">
         </div>
         <div class="title">
-            <p>How did we do?</p>
+            <h2>How did we do?</h2>
         </div>
         <div class="text">
-            <p>Please let us know how we did with your support request. 
-                All feedback is appreciated to 
-                help us improve our offering! </p>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! </p>
         </div>
         <div class="btns-section">
             <button>1</button>
@@ -31,11 +28,18 @@
             <button>4</button>
             <button>5</button>
         </div>
-        <div class="submit">
+        <div class="submit-button">
             <submit> SUBMIT</submit>
         </div>
         
-    </div>
     
+    </section>
+    <section class="thanks-section">
+        <img class="thanks-sextion-img" src="/images/illustration-thank-you.svg" alt="thank-you"/>
+        <div class="thanks-section-select">You selected <span class="thanks-section-user-select">4</span> out of 5</div>
+        <h2 class="thanks-section-title"> Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </section>
+    <script src="/app.js"></script>
 </body>
 </html>
