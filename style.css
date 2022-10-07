@@ -112,7 +112,7 @@ body{
 
 }
 @media (min-width: 600px){
-    .rating-section, thanks-section{
+    .rating-section, .thanks-section{
         width: 500px;
         height: 500px;
         padding: 40px;
