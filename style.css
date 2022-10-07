@@ -1,7 +1,7 @@
 :root {
     --White: hsl(0, 0%, 100%);
     --Light-Grey: hsl(217, 12%, 63%);
-    --Medium-Grey: hsl(216, 12%, 54%);
+    --Medium-Grey: hsl(217, 20%, 23%);
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
     --Orange: hsl(25, 97%, 53%);
@@ -11,13 +11,14 @@ body{
     background-color: var(--Very-Dark-Blue); 
     font-family: 'Overpass', sans-serif;
     font-size: 15px
+}
 
-}
-.title{
+.title, .thanks-section-title{
     color: var(--White);
-    text-align: left;
-    
+    margin-bottom: 22px;
+    font-size: 1.6em;
 }
+
 .rating-section, .thanks-section {
     background-color: var(--Dark-Blue);
     width: 300px;
@@ -29,11 +30,108 @@ body{
 
 .star-icon{
     background-color:var(--Medium-Grey);
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    display: grid;
+    place-content: center;
 }
-.text{
+
+.rating-text, .thanks-text{
+    color: var(--Light-Grey);
+    margin-bottom: 30px;
 }
+
 .submit-button{
     background-color: var(--Orange);
     color: var(--White);
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+.submit-button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+
+}
+.btns-section{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rating-btn{
+    background-color:var(--Medium-Grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    color: var(--Light-Grey);
+    border: none;
+}
+.rating-btn:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.rating-btn:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.thanks-section{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+}
+.thanks-sextion-img{
+    width: 150px;
+    margin-bottom: 24px;
+}
+.thanks-section-select{
+    background-color: var(--Medium-Grey);
+    width: 170px;
+    height: 36px;
+    border-radius: 50px;
+    color: var(--Orange);
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+.thanks-text{
+    text-align: center;
+
+}
+@media (min-width: 600px){
+    .rating-section, thanks-section{
+        width: 500px;
+        height: 500px;
+        padding: 40px;
+    }
+    .star-icon, .rating-btn{
+        width: 50px;
+        height: 50px;
+    }
+    .rating-text, .thanks-text{
+        font-size: 1.07em; 
+    }
+    .title, .thanks-section-title{
+        font-size: 2em;
+    }
+    .rating-text, .thanks-text{
+        font-size:1.09em ;
+    }
+    .thanks-section-select{
+        font-size: 1em;
+        width: 200px;
+    }
 }
